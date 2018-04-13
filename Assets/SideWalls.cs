@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SideWalls : MonoBehaviour {
 
@@ -32,6 +33,13 @@ public class SideWalls : MonoBehaviour {
     }
 
 
+    void loadMenuScene()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+
+    
 
 
 
@@ -66,6 +74,7 @@ public class SideWalls : MonoBehaviour {
                     winText.text = "RACCON 1 WON DA GAME";
                     raccoonRigidBody.velocity = new Vector2(0, 0);
                     raccoonRigidBody.position = new Vector3(0, 0, -.1f);
+                    Invoke("loadMenuScene", 5);
                 }
 
                 if (int.Parse(score2.text) >= 5)
@@ -73,6 +82,7 @@ public class SideWalls : MonoBehaviour {
                     winText.text = "RACCON 2 WON DA GAME";
                     raccoonRigidBody.velocity = new Vector2(0, 0);
                     raccoonRigidBody.position = new Vector3(0, 0, -.1f);
+                    Invoke("loadMenuScene", 5);
                 }
 
 
