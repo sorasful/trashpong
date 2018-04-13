@@ -1,1 +1,12 @@
-Tutorial for making a clone of the classic Pong game, using Unity. Check out the tutorial on Awesome Inc U: [Unity Pong tutorial](http://www.awesomeincu.com/tutorials/unity-pong/)
+# TRASHPONG
+
+The ugliest game you'll ever play with the worst code you'll ever see. All of this is ... TRASH .
+That's the theme of the game.
+
+
+Enjoy !  
+
+
+Edit :  
+
+If you want to go back to menu you can use Escape key 
