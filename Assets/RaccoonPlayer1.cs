@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RaccoonPlayer1 : MonoBehaviour {
 
@@ -15,6 +16,12 @@ public class RaccoonPlayer1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Menu");
+        }
+
 		var vel = raccoonPaddle.velocity;
 		if (Input.GetKey (KeyCode.Q)) {
 			vel.y = raccoonSpeed;
